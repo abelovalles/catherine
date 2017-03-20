@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+span#menu{
+  font-size:30px;
+  cursor:pointer;
+  position: absolute;
+  z-index: 10;
+}
+.nav-link{
+  color: white;
+  font-size: larger;
+}
+.mat-sidenav {
+min-width: 200px !important;
+}
+.verde{
+  background-image: url("/app/images/fondos/7.png");
+}
+.rosa{
+  background-image: url("/app/images/fondos/5.png");
+}
+.morado{
+  background-image: url("/app/images/fondos/9.png");
+}
+
+
+

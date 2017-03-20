@@ -1,0 +1,46 @@
+<md-sidenav-container >
+  <md-sidenav class="verde" #dynamicAlignSidenav mode="push" [align]="side">
+    <div >
+      <br>
+   <a class="nav-link" [routerLink]="['/home']">Who we are</a>
+      <br>
+    </div>
+    <div class="rosa">
+      <br>
+    <a class="nav-link" [routerLink]="['/services']">Osito</a>
+      <br>
+    </div>
+    <div class="morado">
+      <br>
+    <a class="nav-link" [routerLink]="['/ourjobs']">Exchange a book</a>
+      <br>
+    </div>
+    <div>
+      <br>
+    <a class="nav-link" [routerLink]="['/ourclients']">Get involved</a>
+      <br>
+    </div>
+    <div class="rosa">
+      <br>
+    <a class="nav-link" [routerLink]="['/contact']">Contact us</a>
+      <br>
+    </div>
+    <div class="morado">
+      <br>
+      <a class="nav-link" [routerLink]="['/ourjobs']">Register</a>
+      <br>
+    </div>
+
+  </md-sidenav>
+  <span id="menu" (click)="dynamicAlignSidenav.toggle()">&#9776;</span>
+  <!--<button (click)="dynamicAlignSidenav.toggle()">Toggle sidenav</button>-->
+  <app-slider>
+
+  </app-slider>
+
+  <router-outlet>
+
+  </router-outlet>
+</md-sidenav-container>
+
+
