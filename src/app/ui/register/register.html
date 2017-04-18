@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="cuadro">
+    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+
+      <div class="rows">
+        <!-- casilla cliente -->
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{fnametag}} required [formControl]="complexForm.controls['pNombre']">
+            </md-input-container>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{snametag}} required [formControl]="complexForm.controls['sNombre']">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{flastnametag}} required [formControl]="complexForm.controls['pApellido']">
+            </md-input-container>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{slastnametag}} required [formControl]="complexForm.controls['sApellido']">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{usuariotag}} required [formControl]="complexForm.controls['nombreUsuario']">
+            </md-input-container>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="date" placeholder={{fechanacimientotag}} required [formControl]="complexForm.controls['fechaNacimiento']">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{estadotag}} required [formControl]="complexForm.controls['estado']">
+            </md-input-container>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="text" placeholder={{ciudadtag}} required [formControl]="complexForm.controls['ciudad']">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="password" placeholder={{clave1tag}} required [formControl]="complexForm.controls['contraseña']">
+            </md-input-container>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <md-input-container >
+              <input mdInput type="password" placeholder={{clave2tag}} required [formControl]="complexForm.controls['contraseña']">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <button md-raised-button>{{botontag}}</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -18,6 +18,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { QuienesSomosUiComponent } from './ui/QuienesSomos/QuienesSomos';
 import { HomeBlogUiComponent } from './ui/Blog/HomeBlog';
 import { routing } from './ui/MenuBar/NavBarUiComponentConfig';
+import { LoginComponent } from './ui/login/login';
+import { RegisterComponent } from './ui/register/register';
+import { ContactanosComponent } from './ui/Contactanos/Contactanos';
+import { PostUiComponent }  from './ui/Blog/post';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { routing } from './ui/MenuBar/NavBarUiComponentConfig';
     AppBarUiComponent,
     AppSliderUiComponent,
     QuienesSomosUiComponent,
-    HomeBlogUiComponent
+    HomeBlogUiComponent,
+    LoginComponent,
+    RegisterComponent,
+    ContactanosComponent,
+    PostUiComponent
   ],
   imports: [
     BrowserModule,

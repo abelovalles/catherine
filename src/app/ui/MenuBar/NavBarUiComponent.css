@@ -21,6 +21,8 @@ min-width: 200px !important;
 .morado{
   background-image: url("/app/images/fondos/9.png");
 }
-
+.mat-sidenav-content {
+  min-height: 100vh !important;/*100% views heigth*/
+}
 
 

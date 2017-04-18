@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="cuadro">
+<form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+
+  <div class="rows">
+    <!-- casilla cliente -->
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <md-input-container >
+          <input mdInput type="text" placeholder={{usertag}} required [formControl]="complexForm.controls['usuario']">
+        </md-input-container>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <md-input-container >
+          <input mdInput type="password" placeholder={{contratag}} required [formControl]="complexForm.controls['contraseña']">
+        </md-input-container>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <button md-raised-button>{{botontag}}</button>
+      </div>
+    </div>
+  </div>
+
+</form>
+  </div>
+  <div class="reg" > <a [routerLink]="['/register']">Register</a></div>
+</div>
