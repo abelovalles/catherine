@@ -22,6 +22,9 @@ import { LoginComponent } from './ui/login/login';
 import { RegisterComponent } from './ui/register/register';
 import { ContactanosComponent } from './ui/Contactanos/Contactanos';
 import { PostUiComponent }  from './ui/Blog/post';
+import { BooksUiComponent } from './ui/Books/Books';
+import { BookDetailUiComponent } from './ui/BookDetail/BookDetail';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { PostUiComponent }  from './ui/Blog/post';
     LoginComponent,
     RegisterComponent,
     ContactanosComponent,
-    PostUiComponent
+    PostUiComponent,
+    BooksUiComponent,
+    BookDetailUiComponent
   ],
   imports: [
     BrowserModule,

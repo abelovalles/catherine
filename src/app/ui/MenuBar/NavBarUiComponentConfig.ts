@@ -10,6 +10,8 @@ import { LoginComponent } from '../login/login';
 import { RegisterComponent } from '../register/register';
 import { ContactanosComponent } from '../Contactanos/Contactanos';
 import { PostUiComponent } from '../Blog/post';
+import { BooksUiComponent } from '../Books/Books';
+import { BookDetailUiComponent } from '../BookDetail/BookDetail';
 
 export const routerConfig: Routes = [
 
@@ -23,7 +25,11 @@ export const routerConfig: Routes = [
   },
   {
     path: 'intercambio',
-    component: QuienesSomosUiComponent
+    component: BooksUiComponent
+  },
+  {
+    path: 'detalle',
+    component: BookDetailUiComponent
   },
   {
     path: 'involucrate',
